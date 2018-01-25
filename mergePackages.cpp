@@ -14,10 +14,10 @@ vector<int> getIndicesOfItemWeights(const vector<int> &arr, int limit) {
     for (int i = 0; i < arr.size(); i++) {
         auto w = arr[i];
         auto complementIndex = m.find(limit - w);
-        if (complementInt != arr.end())
-            return {index, complementIndex};
+        if (complementIndex != m.end())
+            return {i, complementIndex->first};
         else
-            m.insert(index, complementIndex);
+            m.insert(std::make_pair(i, complementIndex->first));
     }
 }
 
