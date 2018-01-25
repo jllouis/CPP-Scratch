@@ -1,11 +1,13 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-#include <numeric>
 
 using namespace std;
 
 vector<int> findArrayQuadruplet(const vector<int> &arr2, int s) {
+    if (arr2.size() < 4)
+        return {};
+
     vector<int> arr(arr2);
     sort(arr.begin(), arr.end());
 
@@ -31,8 +33,7 @@ int main() {
     vector<int> arr = {2, 7, 4, 0, 9, 5, 1, 3};
     vector<int> arr2 = {};
     int s = 20;
-    auto res = findArrayQuadruplet(arr, s);
-    cout << "test";
+    auto res = findArrayQuadruplet(arr2, s);
     for (auto elem : res)
         cout << elem << " ";
     return 0;
