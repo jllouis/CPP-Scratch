@@ -16,3 +16,4 @@ add_executable(almostPalindrome almostPalindrome.cpp)
 
 add_executable(scratchPad scratchPad.cpp)
 add_executable(DecryptMessage DecryptMessage.cpp)
+add_executable(SalesPath SalesPath.cpp)
