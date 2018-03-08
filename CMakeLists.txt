@@ -2,6 +2,7 @@ cmake_minimum_required(VERSION 3.9)
 project(Scratch)
 
 set(CMAKE_CXX_STANDARD 17)
+set(BOOST_ROOT)
 
 add_executable(Scratch doesCircleExist.cpp)
 add_executable(tuplefor triangeOrNot.cpp)
@@ -18,3 +19,4 @@ add_executable(scratchPad scratchPad.cpp)
 add_executable(DecryptMessage DecryptMessage.cpp)
 add_executable(SalesPath SalesPath.cpp)
 add_executable(highestScoringWord highestScoringWord.cpp)
+add_executable(anagrams anagrams.cpp)
